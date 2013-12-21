@@ -17,9 +17,7 @@ html xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml" 
     = partial 'views/analytics_code'
 
   body class="#{page_classes}"
-    = partial 'views/header'
     = yield
-    = partial 'views/footer'
 
     = javascript_include_tag 'application'
     = partial 'views/analytics_lib'

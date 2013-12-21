@@ -1,0 +1,22 @@
+$body-font-color : $black;
+$anchor-font-color : $blue;
+
+$text-shadow: rgba($black,0.8) 0px 2px 0px;
+
+$transition-duration: 0.5s;
+
+// a {
+//   color: $anchor-font-color;
+//   font-weight: bold;
+//   border-bottom: 1px solid $gray;
+//   @include single-transition();
+//   &:hover {
+//     border-bottom-color: $anchor-font-color;
+//   }
+// }
+
+$header-font-family: 'Great Vibes', cursive;
+
+.title-chamber {
+  font-family: 'Great Vibes', cursive;
+}

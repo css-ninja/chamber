@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+@import
+  "foundation/scss/normalize",
+  "colors",
+  "foundation/scss/foundation/functions",
+  "settings";
+
+@import
+  "foundation/scss/foundation/components/global",
+  "foundation/scss/foundation/components/buttons",
+  "foundation/scss/foundation/components/grid",
+  "foundation/scss/foundation/components/inline-lists",
+  "foundation/scss/foundation/components/top-bar",
+  "foundation/scss/foundation/components/type",
+  "foundation/scss/foundation/components/visibility";
+
+@import
+  "global",
+  "modules/type";

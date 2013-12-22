@@ -1,10 +1,10 @@
 section.m-contact
-  .row itemscope="" itemprop="address" itemtype="http://schema.org/PostalAddress"
+  .row
     .medium-6.columns
       h3#js-contact Contact
       p
         strong= data.contact.name
-      p
+      p itemscope="" itemprop="address" itemtype="http://schema.org/PostalAddress"
         span itemprop="streetAddress" = data.contact.adress
         br
         span itemprop="postalCode" =' data.contact.postal_code
@@ -20,11 +20,13 @@ section.m-contact
     .medium-6.columns
       h3 Réserver la chambre
       p
-        br
+        i class="fa fa-phone-square fa-lg"
         = link_to data.contact.phone, "tel:#{data.contact.phone}", itemprop: 'telephone'
         br
+        i class="fa fa-facebook-square fa-lg"
         = link_to 'facebook', data.contact.facebook
         br
+        i class="fa fa-envelope fa-lg"
         = link_to data.contact.email, "mailto:#{data.contact.email}", itemprop: 'email'
 
 

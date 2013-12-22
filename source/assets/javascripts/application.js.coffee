@@ -6,3 +6,5 @@
 #= require "foundation/js/foundation/foundation.orbit"
 
 #= require "application_init"
+#= require "map"
+

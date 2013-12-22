@@ -12,15 +12,14 @@ html xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml" 
 
     = partial 'views/favicon'
     = stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Great+Vibes:400|Open+Sans:400,800'
-
     = stylesheet_link_tag 'application'
+    = stylesheet_link_tag 'https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css'
+
     = partial 'views/analytics_code'
 
   body class="#{page_classes}" itemscope="" itemtype="http://schema.org/BedAndBreakfast"
     = yield
 
-    /= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{data.settings.google_maps.api_key}&sensor=true"
+    = javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{data.settings.google_maps.api_key}&sensor=true"
     = javascript_include_tag 'application'
-
-
     = partial 'views/analytics_lib'

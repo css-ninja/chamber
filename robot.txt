@@ -1,0 +1,3 @@
+Sitemap: http://www.chambredesanges.be/sitemap.xml
+User-Agent: *
+Disallow:

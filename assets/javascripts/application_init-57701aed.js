@@ -1,0 +1,1 @@
+!function(){$(document).foundation(),console.log("waloo")}.call(this);

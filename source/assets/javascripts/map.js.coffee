@@ -2,7 +2,7 @@ init = ->
   mapOptions =
     zoom: 11
 
-    center: new google.maps.LatLng(50.81920853040926, 4.344214408003952)
+    center: new google.maps.LatLng(50.81911, 4.344139)
 
     # This is where you would paste any style found on Snazzy Maps.
     styles: [

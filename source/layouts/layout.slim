@@ -16,7 +16,7 @@ html xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml" 
     = stylesheet_link_tag 'application'
     = partial 'views/analytics_code'
 
-  body class="#{page_classes}"
+  body class="#{page_classes}" itemscope="" itemtype="http://schema.org/BedAndBreakfast"
     = yield
 
     /= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{data.settings.google_maps.api_key}&sensor=true"

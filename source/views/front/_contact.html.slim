@@ -1,26 +1,31 @@
 section.m-contact
-  .row
+  .row itemscope="" itemprop="address" itemtype="http://schema.org/PostalAddress"
     .medium-6.columns
-      h2#js-contact Contact
+      h3#js-contact Contact
       p
         strong= data.contact.name
       p
-        = data.contact.adress
+        span itemprop="streetAddress" = data.contact.adress
         br
-        =' data.contact.postal_code
-        = data.contact.city
+        span itemprop="postalCode" =' data.contact.postal_code
+        span itemprop="addressLocality" = data.contact.city
         br
-        = data.contact.country
+        span itemprop="addressCountry" = data.contact.country
+
+      p itemscope="" itemprop="geo" itemtype="http://schema.org/GeoCoordinates"
+          meta itemprop="latitude"  content="#{data.contact.latitude}"
+          meta itemprop="longitude" content="#{data.contact.longitude}"
+          ='data.contact.latitude
+          ='data.contact.longitude
     .medium-6.columns
+      h3 Réserver la chambre
       p
-        strong Réserver la chambre
         br
-        strong
-          'Téléphone
-        = link_to data.contact.phone, "tel:#{data.contact.phone}"
+        = link_to data.contact.phone, "tel:#{data.contact.phone}", itemprop: 'telephone'
         br
         = link_to 'facebook', data.contact.facebook
         br
-        = link_to 'email', data.contact.email
+        = link_to data.contact.email, "mailto:#{data.contact.email}", itemprop: 'email'
+
 
 

@@ -1,8 +1,10 @@
 name: Chantal Deraedth
-adress: "45 rue rodenbach"
-postal_code: 1190
-city: Forest
+adress: "Rue Rodenbach 49"
+postal_code: "1190"
+city: Bruxelles
 country: Belgique
-phone: 21234345
-facebook: 'https://www.facebook.com/chantal.deraedt'
-email: 'chantalderaedt@yahoo.fr'
+phone: "023465441"
+facebook: "https://www.facebook.com/chantal.deraedt"
+email: "chantalderaedt@yahoo.fr"
+latitude: 50.81911
+longitude: 4.344139

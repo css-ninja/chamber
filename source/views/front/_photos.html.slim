@@ -1,4 +1,33 @@
 section.m-photos
   .row
     .medium-12.columns
-      h2 Photos
+      h2#js-photos Photos
+      ul class="orbit" data-orbit=""
+        - data.pictures.each_with_index do |picture|
+          li
+            = image_tag "chamber/#{picture.name}", alt: "#{picture.alt}"
+            .orbit-caption
+              = picture.caption
+
+      h3 Informations
+      .row
+        .medium-6.columns
+          p Situé en plein Bruxelles, vous décrouvrirez cette chambre décorée avec goût par une artiste peintre.
+          p Pendant votre séjour, vous pourrez facilement vous rendre dans le centre ville grâce à la station de tramway qui se trouve à proximité (3 stations seulement).
+          p Salle de bain avec WC, lavabo et douche. Les draps et serviettes de bain sont fournis. Un sèche cheveux sera également à disposition.
+          p Possibilté de boissons chaudes (sans frais supplémentaires)
+        .medium-6.columns
+          ul
+            li
+              strong
+                'Capacité :
+              '2 personnes
+            li
+              strong
+                'Surface :
+              |30 m
+              sup 2
+            li
+              strong
+                'Animaux autorisés
+              |(payant)

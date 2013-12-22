@@ -12,9 +12,13 @@
   "foundation/scss/foundation/components/grid",
   "foundation/scss/foundation/components/inline-lists",
   "foundation/scss/foundation/components/top-bar",
+  "foundation/scss/foundation/components/orbit",
   "foundation/scss/foundation/components/type",
   "foundation/scss/foundation/components/visibility";
 
 @import
   "global",
   "modules/type";
+
+@import
+  "front/intro";

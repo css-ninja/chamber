@@ -1,0 +1,20 @@
+.m-intro {
+  background-image: url(image-path('girl_blur.jpg'));
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.m-intro--title {
+  font-weight: $font-weight-bold;
+  margin: rem-calc(350) 0 rem-calc(200);
+  color: $white;
+  text-shadow: $text-shadow;
+  small {
+    color: $blue;
+  }
+}
+
+.m-intro--image {
+
+}
+

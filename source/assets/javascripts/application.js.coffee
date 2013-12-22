@@ -2,6 +2,7 @@
 #= require "jquery.smoothscroll"
 
 #= require "foundation/js/foundation/foundation"
-#= require "foundation/js/foundation/foundation.top-bar"
+#= require "foundation/js/foundation/foundation.topbar"
+#= require "foundation/js/foundation/foundation.orbit"
 
-#= application_init
+#= require "application_init"

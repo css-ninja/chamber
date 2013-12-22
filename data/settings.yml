@@ -1,10 +1,9 @@
 site:
   title: Chambre des anges
-  description: "Vous cherchez une chambre d'hôte d'artise à Bruxelles ?"
+  description: "Vous cherchez une chambre d'hôte d'artiste à Bruxelles ? Un Bed and Breakfast accueillant pour un week end à la capitale de la Belgiue ?"
   url: 'http://chambredesanges.be'
   logo: 'http://chambredesanges.be/apple-touch-icon-144x144-precomposed.png'
-social:
-  facebook: 'https://www.facebook.com/chantal.deraedt'
-  email: 'chantalderaedt@yahoo.fr'
 google_analytics:
-  tracking_code: 'UA-XXXXXXXX-1'
+  tracking_code: 'UA-46673038-1'
+google_maps:
+  api_key: AIzaSyA4bLe-b4Eg-tP_NTOyYbWvbJOewKKP6RQ

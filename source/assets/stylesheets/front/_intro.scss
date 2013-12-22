@@ -2,15 +2,18 @@
   background-image: url(image-path('girl_blur.jpg'));
   background-position: center top;
   background-repeat: no-repeat;
+  .l-button {
+    margin-bottom: rem-calc(200);
+  }
 }
 
 .m-intro--title {
   font-weight: $font-weight-bold;
-  margin: rem-calc(350) 0 rem-calc(200);
+  margin: rem-calc(350) 0 0;
   color: $white;
   text-shadow: $text-shadow;
   small {
-    color: $blue;
+    color: $white;
   }
 }
 
@@ -18,3 +21,6 @@
 
 }
 
+.l-button {
+  margin-top: rem-calc(20);
+}

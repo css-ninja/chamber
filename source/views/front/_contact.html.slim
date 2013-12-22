@@ -1,4 +1,26 @@
-section.m-map
+section.m-contact
   .row
-    .medium-12.columns
+    .medium-6.columns
       h2#js-contact Contact
+      p
+        strong= data.contact.name
+      p
+        = data.contact.adress
+        br
+        =' data.contact.postal_code
+        = data.contact.city
+        br
+        = data.contact.country
+    .medium-6.columns
+      p
+        strong Réserver la chambre
+        br
+        strong
+          'Téléphone
+        = link_to data.contact.phone, "tel:#{data.contact.phone}"
+        br
+        = link_to 'facebook', data.contact.facebook
+        br
+        = link_to 'email', data.contact.email
+
+

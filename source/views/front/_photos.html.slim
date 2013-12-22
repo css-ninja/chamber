@@ -1,7 +1,7 @@
 section.m-photos
   .row
     .medium-12.columns
-      h2#js-photos Photos
+      h2#js-photos Photographies
       ul class="orbit" data-orbit=""
         - data.pictures.each_with_index do |picture|
           li
@@ -12,10 +12,10 @@ section.m-photos
       h3 Informations
       .row
         .medium-6.columns
-          p Situé en plein Bruxelles, vous décrouvrirez cette chambre décorée avec goût par une artiste peintre.
-          p Pendant votre séjour, vous pourrez facilement vous rendre dans le centre ville grâce à la station de tramway qui se trouve à proximité (3 stations seulement).
+          p Située en plein Bruxelles, vous décrouvrirez cette chambre décorée avec goût par une artiste peintre.
+          p Pendant votre séjour, vous pourrez facilement vous rendre dans le centre ville grâce à la station de tramway qui se trouve à proximité.
           p Salle de bain avec WC, lavabo et douche. Les draps et serviettes de bain sont fournis. Un sèche cheveux sera également à disposition.
-          p Possibilté de boissons chaudes (sans frais supplémentaires)
+          p Possibilté de boissons chaudes (sans frais supplémentaires).
         .medium-6.columns
           ul
             li
@@ -27,7 +27,6 @@ section.m-photos
                 'Surface :
               |30 m
               sup 2
-            li
-              strong
-                'Animaux autorisés
-              |(payant)
+            .row
+              .small-8.medium-6.small-centered.columns
+                = link_to 'Reserver &#9658;', '#js-contact', class: 'button secondary l-button'

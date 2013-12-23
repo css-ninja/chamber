@@ -1,3 +1,5 @@
 Sitemap: http://www.chambredesanges.be/sitemap.xml
 User-Agent: *
-Disallow:
+
+Disallow: /maps-medium.html
+Disallow: /maps-small.html

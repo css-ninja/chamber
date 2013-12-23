@@ -19,6 +19,12 @@
 }
 
 .m-footer {
-  background-color: $blue;
+  background-color: $black-light;
   color: $white;
+  a {
+    color: $gray;
+    &:hover {
+      color: $orchid;
+    }
+  }
 }

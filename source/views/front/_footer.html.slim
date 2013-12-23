@@ -1,14 +1,16 @@
 .row
   .small-12.columns.text-center
     p.m-go-top
-      = link_to('Haut de page &#9650;','#top')
+      = link_to '#top' do
+        'Haut de page
+        i.fa.fa-lg.fa-caret-up
 footer.m-footer
   hr
   .row
-    .small-10.columns
+    .medium-10.columns
       p
         'chambredesanges.be est rédigé et administré par
         = link_to('David Leuliette','http://davidleuliette.com')
-    .small-2.columns
+    .medium-2.columns
       p
         =' link_to('Mentions légales','/legal.html')

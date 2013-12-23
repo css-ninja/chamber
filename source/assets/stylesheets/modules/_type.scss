@@ -16,13 +16,26 @@ $transition-duration: 0.5s;
 // }
 
 %title-chamber {
-  font-family: 'Great Vibes', cursive;
+  font-family: $font-cursive;
+  color: $blue;
+}
+
+h2 {
+  @extend %title-chamber;
 }
 
 .top-bar {
   .title-area {
-    a {
-      @extend %title-chamber;
+    .name {
+      a {
+        @extend %title-chamber;
+        @media #{$small-only} {
+          font-size: rem-calc(22);
+          padding-right: 0;
+        }
+      }
     }
   }
 }
+
+

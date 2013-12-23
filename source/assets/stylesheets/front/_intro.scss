@@ -1,7 +1,10 @@
 .m-intro {
-  background-image: url(image-path('girl_blur.jpg'));
-  background-position: center top;
-  background-repeat: no-repeat;
+  .m-intro--image {
+    background-image: url(image-path('girl_blur.jpg'));
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+
   .l-button {
     margin-bottom: rem-calc(200);
   }
@@ -9,18 +12,13 @@
 
 .m-intro--title {
   font-weight: $font-weight-bold;
-  margin: rem-calc(350) 0 0;
   color: $white;
   text-shadow: $text-shadow;
+  padding: rem-calc(350) 0 0;
+  @media #{$small-only} {
+    padding: rem-calc(150) 0 0;
+  }
   small {
     color: $white;
   }
-}
-
-.m-intro--image {
-
-}
-
-.l-button {
-  margin-top: rem-calc(20);
 }

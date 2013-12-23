@@ -1,7 +1,10 @@
 section.m-contact
   .row
+    .medium-12.columns
+      h2 Contact
+  .row
     .medium-6.columns
-      h3#js-contact Contact
+      h3 Adresse
       p
         strong= data.contact.name
       p itemscope="" itemprop="address" itemtype="http://schema.org/PostalAddress"
@@ -15,6 +18,8 @@ section.m-contact
       p itemscope="" itemprop="geo" itemtype="http://schema.org/GeoCoordinates"
           meta itemprop="latitude"  content="#{data.contact.latitude}"
           meta itemprop="longitude" content="#{data.contact.longitude}"
+          strong
+            'GPS
           ='data.contact.latitude
           ='data.contact.longitude
     .medium-6.columns
@@ -28,6 +33,3 @@ section.m-contact
         br
         i class="fa fa-envelope fa-lg"
         = link_to data.contact.email, "mailto:#{data.contact.email}", itemprop: 'email'
-
-
-

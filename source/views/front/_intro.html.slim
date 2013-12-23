@@ -1,11 +1,14 @@
-section.m-intro#top
+section.m-intro
   .row
     .medium-12.columns.text-center
       span itemprop="description" content="Bed and Breakfast et chambre d'hôtes à Bruxelles"
       span itemprop="url" content="#{data.settings.site.url}"
       span itemprop="image" content="#{data.settings.site.picture}"
-      h1.m-intro--title
-        'Découvrez ma chambre d'hôte
-        br
-        small au coeur de Bruxelles
-      = link_to 'Voir les photos &#9658;', '#js-photos', class: 'button secondary l-button'
+      .m-intro--image
+        h1.m-intro--title
+          'Découvrez ma chambre d'hôte
+          br
+          small au coeur de Bruxelles
+        = link_to '#js-photos', class: 'button secondary l-button' do
+          'Voir les photos
+          i.fa.fa-lg.fa-caret-right

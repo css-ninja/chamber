@@ -1,4 +1,6 @@
 require 'slim'
+
+activate :gzip
 activate :livereload
 
 set :js_dir, 'assets/javascripts'
@@ -16,9 +18,11 @@ end
 # Build-specific configuration
 configure :build do
 
+  activate :minify_html
   activate :minify_css
   activate :minify_javascript
   activate :asset_hash
+  activate :favicon_maker
 
   # activate :relative_assets
   # set :relative_links, true

@@ -4,7 +4,7 @@
 #= require "foundation/js/foundation/foundation"
 #= require "foundation/js/foundation/foundation.topbar"
 #= require "foundation/js/foundation/foundation.orbit"
+#= require "foundation/js/foundation/foundation.interchange"
 
-#= require "application_init"
 #= require "map"
-
+#= require "application_init"

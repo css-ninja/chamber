@@ -1,4 +1,4 @@
- .fa-lg {
+.fa-lg {
   margin-right: rem-calc(5);
 }
 
@@ -8,4 +8,17 @@
 
 .fa-facebook-square {
   color: $sc-facebook;
+}
+
+.l-button {
+  margin-top: rem-calc(20);
+}
+
+.m-separator {
+  margin: rem-calc(50) 0;
+}
+
+.m-footer {
+  background-color: $blue;
+  color: $white;
 }

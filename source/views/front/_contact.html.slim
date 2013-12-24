@@ -25,8 +25,9 @@ section.m-contact
     .medium-6.columns
       h3 Réserver la chambre
       p
-        i class="fa fa-phone-square fa-lg"
-        = link_to data.contact.phone, "tel:#{data.contact.phone}", itemprop: 'telephone'
+        i class="fa fa-phone-square fa-lg left"
+        span class="show-for-medium-up left"= data.contact.phone
+        = link_to data.contact.phone, "tel:#{data.contact.phone}", itemprop: 'telephone', class: 'show-for-small left'
         br
         i class="fa fa-facebook-square fa-lg"
         = link_to 'facebook', data.contact.facebook

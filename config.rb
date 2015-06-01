@@ -24,7 +24,7 @@ configure :build do
   activate :asset_hash
   activate :favicon_maker
 
-  # activate :relative_assets
-  # set :relative_links, true
+  activate :relative_assets
+  set :relative_links, true
 
 end

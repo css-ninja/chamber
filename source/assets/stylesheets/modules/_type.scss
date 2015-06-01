@@ -24,6 +24,10 @@ h2 {
   @extend %title-chamber;
 }
 
+h3 {
+  font-weight: $font-weight-bold;
+}
+
 .top-bar {
   .title-area {
     .name {
@@ -37,5 +41,3 @@ h2 {
     }
   }
 }
-
-

@@ -1,12 +1,13 @@
 source "http://rubygems.org"
 
-# WAT gem for ubuntu
-gem 'therubyracer'
+if /linux/ =~ RUBY_PLATFORM
+  gem 'therubyracer'
+end
 
-gem 'middleman'
-gem 'middleman-gh-pages'
-gem 'middleman-livereload'
-gem 'middleman-favicon-maker'
-gem 'middleman-minify-html'
+gem 'middleman',               '~> 3.3.7'
+gem 'middleman-gh-pages',      '~> 0.0.3'
+gem 'middleman-livereload',    '~> 3.4.2'
+gem 'middleman-favicon-maker', '~> 3.7'
+gem 'middleman-minify-html',   '~> 3.4.0'
 
-gem 'slim'
+gem 'slim',    '~> 3.0.2'

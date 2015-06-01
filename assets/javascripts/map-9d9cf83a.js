@@ -1,0 +1,1 @@
+(function(){var e;e=function(){var e,o,a,n,t;return e=new google.maps.LatLng(50.81911,4.344139),n={zoom:15,center:e},a=document.getElementById("map"),o=new google.maps.Map(a,n),t=new google.maps.Marker({position:e,map:o,title:"La chambre des anges"})},google.maps.event.addDomListener(window,"load",e)}).call(this);
